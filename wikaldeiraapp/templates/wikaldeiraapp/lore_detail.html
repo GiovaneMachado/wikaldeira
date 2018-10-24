@@ -1,0 +1,16 @@
+{% extends 'wikaldeiraapp/base.html' %}
+{% block content %}
+	<main role="main" class="container">
+		<div class="row">
+        	<div class="col-md-8 blog-main">
+        		<img src="{{lore.image.url}}" class="img-thumbnail">
+          		<div class="blog-post">
+            		<h2 class="blog-post-title">{{ lore.title }}</h2>
+            		<p>{{ lore.text|safe }}</p>
+                    <a href="{% url 'lore_edit' pk=lore.pk %}"><button type="button" class="btn btn-sm btn-outline-secondary">Edit</button></a>
+                    <a href="{% url 'lore_delete' pk=lore.pk %}"><button type="button" class="btn btn-sm btn-outline-secondary">Delete</button></a>
+            	</div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
