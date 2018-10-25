@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'wikaldeiraapp',
-    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -126,9 +125,3 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = (os.path.join(BASE_DIR, 'media'))
 MEDIA_URL = '/media/'
 
-
-BLEACH_ALLOWED_TAGS = ['p', 'b', 'i', 'u', 'em', 'strong', 'a']
-BLEACH_ALLOWED_ATTRIBUTES = ['href', 'title', 'style']
-BLEACH_STRIP_TAGS = True
-
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
