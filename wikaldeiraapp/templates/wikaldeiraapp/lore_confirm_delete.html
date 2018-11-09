@@ -1,6 +1,7 @@
 {% extends 'wikaldeiraapp/base.html' %}
 {% block content %}
-<div class="container">
+<div class="bg-light">
+<div class="container py-5 bg-faded">
     <h1>Lore Delete</h1>
     <div class="row align-items-center">
         <form method="post">{% csrf_token %}
@@ -8,10 +9,12 @@
                 Você tem certeza que deseja deletar "{{ object }}" ?
             </div>
             <div class="col">
-                <input  class="btn btn-sm btn-outline-secondary" type="submit" value="Sim!"/>
-                <button class="btn btn-sm btn-outline-secondary">Não!</button>
+                <input  class="btn btn-dark" type="submit" value="Sim!"/>
+                <button class="btn btn-secondary">Não!</button>
             </div>
         </form>
     </div>
 </div>
+</div>
+
 {% endblock %}

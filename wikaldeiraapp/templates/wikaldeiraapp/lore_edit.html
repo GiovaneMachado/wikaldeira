@@ -1,6 +1,7 @@
 {% extends 'wikaldeiraapp/base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
+<div class="bg-light">
 	<form method="POST" class="post-form" enctype="multipart/form-data">
 		{% csrf_token %}
 		<div class="container py-5 bg-faded">
@@ -10,5 +11,6 @@
 				<button type="submit" class="save btn btn-default" value="Submit">Save</button>
 			</div>
 		</div>
-	</form>	
+	</form>
+</div>
 {% endblock %}

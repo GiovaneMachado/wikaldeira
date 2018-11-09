@@ -1,18 +1,29 @@
 {% extends 'wikaldeiraapp/base.html' %}
 {% block content %}
-  <div class="container py-5 bg-faded">
-    <div class="row">
-      <div class="card-columns">
-        {% for l in lores %}               
-          <div class="card shadow-sm">
-            <a href="{% url 'lore_detail' pk=l.pk %}"><img class="card-img-top" src="{{l.image.url}}"></a>
-            <div class="card-body">
-              <p class="card-text">{{ l.title }}</p>
+<div class="bg-light">
+    <div class="container py-5 bg-faded">
+        <div class="row">
+            <div class="card-columns">
+                {% for l in lores %}
+                    <div class="card text-center text-white bg-dark border-transparent shadow-sm">
+                        <a href="{% url 'lore_detail' pk=l.pk %}">
+                            <img class="card-img-top" src="{{l.image.url}}">
+                        </a>
+                        <div class="card-body">
+                            <p class="card-text" >{{ l.title }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
-          </div>
-        {% endfor %}
-      </div>
-    <div>
-  </div>
+        <div>
+    </div>
+        </div>
+    <footer class="text-muted">
+		<div class="container">
+            <p class="float-right">
+				<a href="#" class="text-muted">Pra cima!</a>
+		    </p>
+        </div>
+    </footer>
 {% endblock %}
     
