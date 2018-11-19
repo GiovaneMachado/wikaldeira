@@ -10,24 +10,39 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<title>Wikaldeira</title>
 	</head>
-	<body>
+	<body class="jorge">
+    <p>teste</p>
 		<header>
 			<div class="navbar navbar-dark bg-dark shadow-sm">
 				<div class="container d-flex justify-content-between">
 					<a href="/" class="navbar-brand d-flex align-items-center">
 						<strong class="titulos">Wikaldeira</strong>
 					</a>
+
 					<form method="GET" action="{% url 'lore_search' %}" class="form-inline mt-2 mt-md-0">
-						<a href="{% url 'lore_new' %}"><button type="button" class="btn btn-dark"><b class="titulos">+</b></button></a>
-                        <input class="form-control mr-sm-2" type="text" name="search_box" placeholder="Encontre..." aria-label="Search" style="font-family: 'Baloo Bhaijaan', cursive; font-style: italic; font-weight: normal;">
-                    </form>
+						{% if user.is_authenticated %}
+							<a href="{% url 'lore_new' %}"><button type="button" class="btn btn-dark"><b class="titulos">+</b></button></a>
+                        	<input class="form-control mr-sm-2" type="text" name="search_box" placeholder="Encontre..." aria-label="Search" style="font-family: 'Baloo Bhaijaan', cursive; font-style: italic; font-weight: normal;">
+						    <a href="http://127.0.0.1:8000/admin/"><button type="button" class="btn btn-dark"><b class="titulos">AdminPage</b></button></a>
+                        {% else %}
+							<a href="http://127.0.0.1:8000/admin/"><button type="button" class="btn btn-dark"><b class="titulos">Login</b></button></a>
+                    	{% endif %}
+					</form>
 				</div>
 			</div>
 		</header>
-
-		{% block content %}  
-		{% endblock %}
-
+        {% if user.is_authenticated %}
+		    {% block content %}
+		    {% endblock %}
+        {% else %}
+				<main role="main" class="inner cover">
+				<h1 class="cover-heading">Faça uma página de capa.</h1>
+				<p class="lead">Capas são templates de uma única página para construir home pages simples e lindas. Baixe, edite o texto e adicione seu próprio background fullscreen, de maneira que tudo fique com a sua cara.</p>
+				<p class="lead">
+				  <a href="#" class="btn btn-lg btn-secondary">Saiba mais</a>
+				</p>
+			  </main>
+        {% endif %}
 
 
 		<!-- Bootstrap core JavaScript

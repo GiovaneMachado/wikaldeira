@@ -60,3 +60,5 @@ def lore_search(request):
 
 
 
+
+

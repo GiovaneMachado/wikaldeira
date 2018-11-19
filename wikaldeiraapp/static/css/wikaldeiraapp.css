@@ -2,6 +2,13 @@ p.lead{
     font-family: 'Noto Serif', serif;
 }
 
+.jorge {
+    background-color: #333 !important;
+}
+body {
+    background-color: #333 !important;
+}
+
 .titulos{
     font-family: 'Baloo Bhaijaan', cursive;
     font-weight: normal;
@@ -21,5 +28,3 @@ p.lead{
     column-count: 5;
   }
 }
-
-
