@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4708312-47cf-4f9e-aaf8-3d08a33cb6a7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/galeria/original/7be21ff7-505c-4cf7-b2e9-1e32f0c0540b.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraapp/static/css/wikaldeiraapp.css" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraapp/static/css/wikaldeiraapp.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_confirm_delete.html" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_confirm_delete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikaldeiraproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikaldeiraproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,11 +24,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_list.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="164">
-              <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+              <caret line="41" selection-start-line="41" selection-end-line="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="180">
+                <caret line="12" column="102" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -107,6 +111,7 @@
         <option value="$PROJECT_DIR$/wikaldeiraapp/static/css/wikaldeiraapp.css" />
         <option value="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/base.html" />
         <option value="$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_list.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -408,7 +413,17 @@
     <entry file="file://$PROJECT_DIR$/wikaldeiraapp/templates/wikaldeiraapp/lore_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
-          <caret line="41" column="76" selection-start-line="41" selection-start-column="76" selection-end-line="41" selection-end-column="76" />
+          <caret line="41" selection-start-line="41" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="180">
+            <caret line="12" column="102" selection-start-line="12" selection-start-column="102" selection-end-line="12" selection-end-column="102" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
