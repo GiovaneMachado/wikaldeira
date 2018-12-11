@@ -1,17 +1,18 @@
 {% extends 'wikaldeiraapp/base.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="bg-light">
-        <form method="POST" class="post-form" enctype="multipart/form-data">
-            {% csrf_token %}
-            <div class="container py-5 bg-faded">
-                <div class="form-group">
-                    <h1>Lore</h1>
-                    <p>Dica: Para incluir links no texto, a sintaxe é <b>&lt;a href="URL_Aqui"&gt;PalavraQueSeráLink&lt;/a&gt;</b>.</p>
-                    {{ form|crispy }}
-                    <button type="submit" class="save btn btn-default" value="Submit">Save</button>
-                </div>
+<div class="bg-light">
+    <form method="POST" class="post-form" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="container py-5 bg-faded">
+            <div class="form-group">
+                <h1>Lore</h1>
+                <p>Dica: Para incluir links no texto, a sintaxe é <b>&lt;a href="URL_Aqui"&gt;PalavraQueSeráLink&lt;/a&gt;</b>.
+                </p>
+                {{ form|crispy }}
+                <button type="submit" class="save btn btn-default" value="Submit">Save</button>
             </div>
-        </form>
-    </div>
+        </div>
+    </form>
+</div>
 {% endblock %}

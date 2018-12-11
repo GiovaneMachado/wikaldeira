@@ -1,29 +1,46 @@
 {% extends 'wikaldeiraapp/base.html' %}
 {% block content %}
-<div class="bg-light">
-    <div class="container py-5 bg-faded">
-        <div class="row">
-            <div class="card-columns">
-                {% for l in lores %}
-                    <div class="card text-center text-white bg-dark border-transparent shadow-sm">
-                        <a href="{% url 'lore_detail' pk=l.pk %}">
-                            <img class="card-img-top" src="{{l.image.url}}">
-                        </a>
-                        <div class="card-body">
-                            <p class="card-text" >{{ l.title }}</p>
+<div class="container py-3 bg-faded">
+    <div class="row">
+        {% if lores %}
+        <div class="card-columns">
+        {% for l in lores %}
+            <div class="card text-center text-white bg-dark border-transparent shadow p-1">
+                <a href="{% url 'lore_detail' pk=l.pk %}">
+                    <img class="card-img-top" src="{{l.image.url}}">
+                </a>
+                <div class="card-body">
+                    <p class="card-text">{{ l.title }}</p>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+        {% else %}
+        <div class="container py-3 bg-faded">
+            <div class="pagina_inicial">
+                <div class="text-center">
+                    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+                        <div class="jumbotron">
+                            <h1 class="display-4">
+                                <p class="titulos ">Ainda não há nada aqui :(</p>
+                            </h1>
+                            <p class="lead">Clique no <a href="{% url 'lore_new' %}">
+                                <button type="button" class="btn btn-dark"><b class="titulos">+</b></button>
+                            </a> e comece!.
+                            </p>
                         </div>
                     </div>
-                {% endfor %}
+                </div>
             </div>
-        <div>
+        </div>
+        {% endif %}
     </div>
-        </div>
-    <footer class="text-muted">
-		<div class="container">
-            <p class="float-right">
-				<a href="#" class="text-muted">Pra cima!</a>
-		    </p>
-        </div>
-    </footer>
+</div>
+<footer class="text-muted">
+    <div class="container">
+        <p class="float-right">
+            <a href="#" class="text-muted"><i class="fas fa-chevron-up"></i></a>
+        </p>
+    </div>
+</footer>
 {% endblock %}
-    

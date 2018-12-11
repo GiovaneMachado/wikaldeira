@@ -2,17 +2,18 @@ p.lead{
     font-family: 'Noto Serif', serif;
 }
 
-.jorge {
-    background-color: #333 !important;
-}
-body {
-    background-color: #333 !important;
-}
-
 .titulos{
     font-family: 'Baloo Bhaijaan', cursive;
     font-weight: normal;
-    font-size: xx-large;
+}
+
+.btn {
+    margin-right: 5px;
+}
+
+.fas {
+    font-size: 30px;
+    color: #fff;
 }
 
 .card-text{
@@ -27,4 +28,20 @@ body {
   @include media-breakpoint-only(xl) {
     column-count: 5;
   }
+}
+
+html,
+body {
+    height: 100%;
+    background-color: #333;
+}
+
+.jumbotron {
+    background-color: transparent;
+    color: #fff;
+}
+
+.iconic {
+    height: 35px;
+    color: red;
 }
