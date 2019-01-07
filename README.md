@@ -13,5 +13,5 @@ para facilitar. Isso pois, no ponto de vista analítico, acredito que o problema
 resolvido, e firulas seriam apenas mais código e tempo desperdiçado. Foco na solução, não em floreios.
 
 
+<a href="https://imgur.com/Phd7Am9"><img src="https://i.imgur.com/Phd7Am9.png" title="source: imgur.com" /></a>
 
-<a href="https://i.imgur.com/OssXeTt.png9"><img src="https://i.imgur.com/OssXeTt.png" title="source: imgur.com" /></a>
